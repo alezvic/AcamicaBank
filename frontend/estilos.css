@@ -77,6 +77,24 @@ body {
   color: white;
 }
 
+.estilo-nav li {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  list-style: none;
+  padding: 20px;
+}
+
+.estilo-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.estilo-nav a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .form-registro {
   width: 400px;
   background-color: #24303c;
@@ -108,7 +126,7 @@ body {
   color: #44525f;
 }
 
-.input-estilo {
+.form-registro .input-estilo {
   width: 100%;
   background-color: #24303c;
   padding: 15px;
@@ -123,25 +141,7 @@ body {
   font-weight: 800;
 }
 
-.form-registro li {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  list-style: none;
-  padding: 20px;
-}
-
-.form-registro a {
-  color: white;
-  text-decoration: none;
-}
-
-.form-registro a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.btn {
+.form-registro .btn {
   width: 100%;
   background: #1f53c5;
   border: none;
@@ -150,5 +150,21 @@ body {
   margin: 16 0;
   font-size: 16px;
   font-weight: 900;
+}
+
+.link {
+  font-weight: 900;
+  outline: none;
+  text-decoration: none;
+  font-size: 15px;
+  list-style: "none";
+}
+
+.link:visited {
+  color: white;
+}
+
+li {
+  list-style: none;
 }
 /*# sourceMappingURL=estilos.css.map */
