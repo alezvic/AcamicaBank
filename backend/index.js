@@ -1,3 +1,8 @@
+const sequelize = require('./conexion.js')
+const cors = require('cors');
+
+
+
 var userInfo = [
     {
         user: "Jaime",
@@ -8,6 +13,7 @@ var userInfo = [
 
 const express = require('express');
 let app = express();
+app.use(cors());
 
 var server = app.listen(3000, listening);
 
@@ -27,8 +33,9 @@ function registrarUsuario(request, response) {
         mail: mail
     }
 
-   userInfo.push(combo);
+   sequelize.query('INSERT INTO usuarios (nombre,email,password,dinero,rol_id) VALUES (?,?,?,?,?)',{
+       replacements:[user,mail,password,0,1]
+   })
 
-    var reply = userInfo;
-    response.send(reply);
+    response.send(combo);
 }
