@@ -37,6 +37,10 @@ function capturar_datos(){
    //contruyo el objeto con el usuario que me dieron por el form la pass y el mail
     nuevo_usuario =new Usuario(capturar_usuario,capturar_pass,capturar_mail);
     agregar();
+    fetch("http://localhost:3000/registro/"+capturar_usuario+"/"+capturar_pass+"/"+capturar_mail)
+    .then(response=>response.json())
+    .then(data=console.log(data))
+    .catch("error");
 }
 
 
