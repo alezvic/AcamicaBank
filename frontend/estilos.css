@@ -9,6 +9,60 @@ body {
   background-image: url(imagenes/01.jpg);
 }
 
+.estilo-nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #24303c;
+}
+
+.estilo-nav ul {
+  list-style-type: none;
+  background-color: red;
+  margin: 0;
+  padding: 0;
+  width: 40%;
+  background-color: #646677;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.estilo-nav ul .li-estilo {
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.estilo-nav ul .li-estilo:hover {
+  background-color: #44525f;
+}
+
+.estilo-nav ul .li-estilo .link-estilo {
+  font-weight: 900;
+  outline: none;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.estilo-nav ul .li-estilo .link-estilo:visited {
+  color: white;
+}
+
 .form-registro {
   width: 400px;
   background-color: #24303c;
@@ -38,6 +92,7 @@ body {
   font-weight: 900px;
   border-radius: 20px;
   outline: none;
+  font-weight: 800;
 }
 
 .form-registro li {

@@ -4,8 +4,45 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(imagenes/01.jpg);
+}
+.estilo-nav {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    background-color: #24303c;
+    ul {
+        list-style-type: none;
+        background-color: red;
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        background-color: #646677;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+
+        .li-estilo {
+            display: inline-block;
+            padding: 8px 16px;
+            text-decoration: none;
+            &:hover {
+                background-color: #44525f;
+            }
+            .link-estilo {
+                font-weight: 900;
+                outline: none;
+                text-decoration: none;
+                font-size: 20px;
+
+                &:visited {
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
 .form-registro {
@@ -16,9 +53,8 @@ body{
     margin-top: 100px;
     border-radius: 20px;
 
-    box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff, 
-    15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff,
-    25px 25px 0px 0px #e1eeff, 12px 9px 15px 12px rgba(0, 0, 0, 0);
+    box-shadow: 5px 5px 0px 0px #289fed, 10px 10px 0px 0px #5fb8ff, 15px 15px 0px 0px #a1d8ff, 20px 20px 0px 0px #cae6ff,
+        25px 25px 0px 0px #e1eeff, 12px 9px 15px 12px rgba(0, 0, 0, 0);
 
     .titulo-formulario {
         color: white;
@@ -39,6 +75,7 @@ body{
     font-weight: 900px;
     border-radius: 20px;
     outline: none;
+    font-weight: 800;
 }
 
 .form-registro {
