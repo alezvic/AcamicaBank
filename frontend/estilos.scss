@@ -31,7 +31,7 @@ body {
             &:hover {
                 background-color: #44525f;
             }
-            &::after{
+            &::after {
                 content: "";
                 background-color: white;
                 position: absolute;
@@ -40,9 +40,8 @@ body {
                 border-radius: 50%;
                 transform: translateX(5px);
                 box-shadow: 5px 5px 0px 0px #289fed, 1px 10px 0px 0px #5fb8ff;
-                
-                color: #44525f ;
-                
+
+                color: #44525f;
             }
             .link-estilo {
                 font-weight: 900;
@@ -54,6 +53,21 @@ body {
                     color: white;
                 }
             }
+        }
+    }
+    li {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        list-style: none;
+        padding: 20px;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: white;
+            text-decoration: underline;
         }
     }
 }
@@ -73,7 +87,7 @@ body {
         color: white;
         font-size: 22px;
         margin-bottom: 20px;
-        &::after{
+        &::after {
             content: "";
             background-color: white;
             position: absolute;
@@ -82,53 +96,35 @@ body {
             border-radius: 50%;
             transform: translateX(5px);
             box-shadow: 5px 5px 0px 0px #289fed, 1px 10px 0px 0px #5fb8ff, 5px 5px 0px 0px #289fed;
-            
-            color: #44525f ;
-            
+
+            color: #44525f;
         }
     }
-}
-
-.input-estilo {
-    width: 100%;
-    background-color: #24303c;
-    padding: 15px;
-    margin-bottom: 16px;
-    border: 1px solid #3680ca;
-    font-family: "calibri";
-    font-size: 18px;
-    color: white;
-    font-weight: 900px;
-    border-radius: 20px;
-    outline: none;
-    font-weight: 800;
-}
-
-.form-registro {
-    li {
-        height: 40px;
-        text-align: center;
+   
+    .input-estilo {
+        width: 100%;
+        background-color: #24303c;
+        padding: 15px;
+        margin-bottom: 16px;
+        border: 1px solid #3680ca;
+        font-family: "calibri";
         font-size: 18px;
-        list-style: none;
-        padding: 20px;
-    }
-    a {
         color: white;
-        text-decoration: none;
-        &:hover {
-            color: white;
-            text-decoration: underline;
-        }
+        font-weight: 900px;
+        border-radius: 20px;
+        outline: none;
+        font-weight: 800;
+     
+    }
+    .btn {
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16 0;
+        font-size: 16px;
+        font-weight: 900;
     }
 }
 
-.btn {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16 0;
-    font-size: 16px;
-    font-weight: 900;
-}
