@@ -47,5 +47,19 @@ function agregar() {
     document.getElementById("mi-formulario").reset();
     //nada mas creo un li y un a por cada uno de los valores del usuario
     document.getElementById("mis-usuarios-li").innerHTML += '<li>Usuario: <a href="">'+nuevo_usuario.usuario+'</a></li><li>Pass: <a href=""> '+nuevo_usuario.pass+'</a></li><li>mail: <a href="">'+nuevo_usuario.mail+' </a></li>'
-    
+    saveInLocalStorage(arr_mis_usuarios);
+}
+
+function saveInLocalStorage(arr_nuevo){
+    if((localStorage.getItem("favoritos")) != null){
+    let array_viejo = []
+    array_viejo =JSON.parse( localStorage.getItem("favoritos"));
+   
+    let array_a_guardar= arr_nuevo;
+    for( i=0; i<array_viejo.length ; i++){
+    array_a_guardar.push(array_viejo[i]);
+
+        }
+    }
+    localStorage.setItem("favoritos",JSON.stringify(arr_nuevo));
 }
