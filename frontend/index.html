@@ -9,12 +9,12 @@
         <header class="estilo-header">
             <nav class="estilo-nav">
                 <ul>
-                    <li class="li-estilo"><a href="" class="link-estilo">Registrarse</a></li>
-                    <li class="li-estilo"><a href="" class="link-estilo">Acceder</a></li>
+                    <li class="li-estilo"><a id="registrarse" href="#" class="link-estilo">Registrarse</a></li>
+                    <li class="li-estilo"><a id="acceder" href="#" class="link-estilo">Acceder</a></li>
                 </ul>
             </nav>
         </header>
-    <section class="form-registro">
+    <section class="form-registro" id="formulario-registro">
         <form action="">
         <h4 class="titulo-formulario">Formulario de registro</h4>
         <input class="input-estilo" type="text" name="usuario" id="usuario" placeholder="Ingrese el usuario, para registrarse">
@@ -29,7 +29,21 @@
     </section>
     
 
+    <section class="form-registro" id="formulario-ingreso" style="display: none;">
+        <form action="">
+        <h4 class="titulo-formulario">Acceder</h4>
+        <input class="input-estilo" type="text" name="usuario" id="usuario" placeholder="Ingrese el usuario, para acceder">
+        <input class="input-estilo" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+        
+
+
+    <input class="btn" type="submit" value="Registrar">    
+    <li></p><a href="#">Consultas</a></li>
+</form>
+    </section>
+
 </head>
+<script src="JS/cambio-paginas.js"></script>
 <body>
     
 </body>
