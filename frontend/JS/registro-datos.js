@@ -38,6 +38,6 @@ function agregar() {
 
     document.getElementById("mi-formulario").reset();
     //nada mas creo un li y un a por cada uno de los valores del usuario
-    document.getElementById("mis-usuarios-li").innerHTML += '<li>nombre de usuario: <a href="">'+nuevo_usuario.usuario+'</a></li><li>Pass: <a href=""> '+nuevo_usuario.pass+'</a></li><li>mail: <a href="">'+nuevo_usuario.mail+' </a></li>'
+    document.getElementById("mis-usuarios-li").innerHTML += '<li>Usuario: <a href="">'+nuevo_usuario.usuario+'</a></li><li>Pass: <a href=""> '+nuevo_usuario.pass+'</a></li><li>mail: <a href="">'+nuevo_usuario.mail+' </a></li>'
     
 }

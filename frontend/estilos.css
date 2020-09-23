@@ -26,7 +26,6 @@ body {
 
 .estilo-nav ul {
   list-style-type: none;
-  background-color: red;
   margin: 0;
   padding: 0;
   width: 40%;
@@ -166,5 +165,41 @@ body {
 
 li {
   list-style: none;
+}
+
+#mis-usuarios-li {
+  background-color: #24303c;
+  width: 409px;
+  color: white;
+  padding: 10px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  margin-left: 10px;
+}
+
+#mis-usuarios-li li {
+  background-color: #445363;
+  width: 90%;
+  margin-top: 10px;
+  padding: 5px;
+  border: solid 1px #3f55fa;
+}
+
+#mis-usuarios-li li a {
+  color: white;
+  text-decoration: none;
+}
+
+#mis-usuarios-li li a:visited {
+  color: white;
 }
 /*# sourceMappingURL=estilos.css.map */
