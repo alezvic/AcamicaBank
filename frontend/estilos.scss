@@ -31,6 +31,19 @@ body {
             &:hover {
                 background-color: #44525f;
             }
+            &::after{
+                content: "";
+                background-color: white;
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                transform: translateX(5px);
+                box-shadow: 5px 5px 0px 0px #289fed, 1px 10px 0px 0px #5fb8ff;
+                
+                color: #44525f ;
+                
+            }
             .link-estilo {
                 font-weight: 900;
                 outline: none;
@@ -60,6 +73,19 @@ body {
         color: white;
         font-size: 22px;
         margin-bottom: 20px;
+        &::after{
+            content: "";
+            background-color: white;
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            transform: translateX(5px);
+            box-shadow: 5px 5px 0px 0px #289fed, 1px 10px 0px 0px #5fb8ff, 5px 5px 0px 0px #289fed;
+            
+            color: #44525f ;
+            
+        }
     }
 }
 

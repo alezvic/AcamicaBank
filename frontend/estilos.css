@@ -52,6 +52,20 @@ body {
   background-color: #44525f;
 }
 
+.estilo-nav ul .li-estilo::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-box-shadow: 5px 5px 0px 0px #289fed, 1px 10px 0px 0px #5fb8ff;
+          box-shadow: 5px 5px 0px 0px #289fed, 1px 10px 0px 0px #5fb8ff;
+  color: #44525f;
+}
+
 .estilo-nav ul .li-estilo .link-estilo {
   font-weight: 900;
   outline: none;
@@ -78,6 +92,20 @@ body {
   color: white;
   font-size: 22px;
   margin-bottom: 20px;
+}
+
+.form-registro .titulo-formulario::after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  -webkit-box-shadow: 5px 5px 0px 0px #289fed, 1px 10px 0px 0px #5fb8ff, 5px 5px 0px 0px #289fed;
+          box-shadow: 5px 5px 0px 0px #289fed, 1px 10px 0px 0px #5fb8ff, 5px 5px 0px 0px #289fed;
+  color: #44525f;
 }
 
 .input-estilo {
